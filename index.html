@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--I modified a template from W3 Schools for this hand-in. Source: https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm#packages-->
+<head>
+  <title>Responsive Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+  </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color: white; background-color: #807691" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Responsive <br>Redesign</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Usability Problems</a>
+    <a href="#observations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-Fidelity Wireframing</a>
+    <a href="#interview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visual Design Style Guide</a>
+    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">High-Fidelity Prototyping</a>
+    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Responsive Redesign</a>
+    <a href="#conclusion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conclusion</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Responsive Redesign</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxlarge"><b>Redesign of the Sacramento <br>Film Festival Website</b>
+    </h1>
+    <h1 class="w3-large" style="color: black"><b>I chose a simple website to redesign-- making improvements in the usability, learnability, and memorability. My objective was to practice the workflow of redesigning a simple website by creating low-fidelity and high-fidelity prototypes for different screen sizes. </b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <div class="w3-center">
+      <img src="https://www.armediastudio.com/sites/default/files/cinegraph-hdr.gif" style="width:30%" onclick="onClick(this)" alt="original website">
+    </div>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>Each year, my hometown puts on a film festival to showcase the art of our local filmmaking community. In high school, my friends and I visited the website for the Sacramento International Film Festival. We found it extremely confusing to navigate, thus, deterring us from wanting to attend or appreciate such a meaningful event. Considerable effort and time are put into hosting local film festivals, so for this reason, I chose to redesign this website. A user-friendly website is essential to encouraging both attendance and recognition for all the independent artists involved in the event. The original website can be found <b><a href="https://www.sacramentofilmfestival.com/" target="_blank">here.</a></b>
+    </p>
+    <div class="w3-center">
+      <img src="https://i.postimg.cc/dVh51wM0/Screen-Shot-2022-10-20-at-3-09-29-PM.png" style="width:70%" onclick="onClick(this)" alt="original website">
+    </div>
+  </div>
+
+  <!-- INTERFACE -->
+  <div class="w3-container" id="interface" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Usability Problems.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+  </div>
+  <div class="w3-row-padding">
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-xlarge w3-padding-32" style="background-color: black;color: white">Usability</li>
+      <li class="w3-padding-16">Cluttered Layout— The many different type sizes, type weights, typefaces, and colors on the webpage causes visual pollution. Thus, discouraging users from wanting to continue navigating the page. If these elements were used more intentionally, they could be more effective in portraying important information to users.</li>
+      <li class="w3-padding-16">Confusing navigation– There is a navigation at the top of the page below the header. At the same time, there seems to be another navigation section with links to submit a film, news, social media links, and upcoming shows. These could be combined to make it easier for visitors to know where to click next.</li>
+      <li class="w3-padding-16">The main reasons a user would visit this site is to submit a film, attend the festival, or learn more about the festival. However, the current design makes it inconvenient for users to complete these wants. It would be helpful to make it easy and obvious how the user can achieve these goals.</li>
+    </ul>
+  </div>
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Efficiency</li>
+      <li class="w3-padding-16">Absence of visual hierarchy– The minimal use of whitespace makes it difficult for users to grasp basic information about the film festival. It is hard to discern the sections of the page which causes visitors to spend more time deciding what they should click or look at next. By altering the size and grouping of page elements, users can be naturally guided to the most crucial components. This adds to the time users take to find what they need from the website.</li>
+    </ul>
+  </div>
+    <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Learnability</li>
+      <li class="w3-padding-16">Unclear UI– The image carousel captures the attention of users at first glance. It is unclear how to interact with this carousel until the user plays around with it. The carousel does not automatically transition between cards, so for the next image or previous image card to show up, users must click the desired image. It is also unclear that clicking on the center image card opens a link to a new tab, which could be frustrating for users when they are redirected unwillingly.</li>
+    </ul>
+  </div>
+    <div class="w3-half">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Memorability</li>
+      <li class="w3-padding-16">Even though the layout is confusing, the site does not have severe memorability issues because there are only a few components overall.</li>
+      <li class="w3-padding-16"> After users navigate through the page for a few minutes, it would be relatively easy to remember which UI components perform certain functions.</li>
+    </ul>
+  </div>
+    <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Conceptual Model</li>
+      <li class="w3-padding-16">Inconsistency– There is no consistency in the UI design. For instance, because the buttons are not uniform it makes it harder for the user to know which elements are clickable. The UI components don’t behave in the same way so the user does not feel a sense of familiarity or control with how to interact with the page.</li>
+      <li class="w3-padding-16">It does not seem like a lot of the design choices were intentional. It would be helpful if the site had a comprehensive mapping of subpages or nested elements.</li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Accessibility.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>The WebAIM WAIVE website found 13 contrast errors, 1 error, 25 alerts, 15 features, 34 structural elements, and 73 ARIA.</p>
+    <p>There was an alert for a skipped heading level. Headings provide structure for the page and facilitate keyboard navigation for users who need assistive technology. This makes the site more confusing for users that need to use assistive technology like a screen reader. Furuthermore, the text is very small in some areas like the Last Year’s Show section. This makes it difficult for people with low vision to read. There are also a fair amount of contrast errors– meaning that there is extremely low contrast between text and background colors. As a result, it could be frustrating for users, especially those with low vision, to read or distinguish text. I agree with the findings of WebAIM WAVE. The currrent Sacramento International Film Festival website is not the most accessible for all users.</p>
+  </div>
+
+  <!-- OBSERVATIONS -->
+  <div class="w3-container" id="observations" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Low Fidelity Wireframing.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+  </div>
+  <h3 style="font-weight: bolder">Desktop</h3>
+  <img src="assets/LargeDesktop.png" style="width:100%; padding-bottom:30px">
+  <h3 style="font-weight: bolder">Tablet</h3>
+  <img src="assets/Tablet.png" style="width:100%; padding-bottom:30px">
+  <h3 style="font-weight: bolder">Phone</h3>
+  <img src="assets/Phone.png" style="width:100%; padding-bottom:30px">
+
+  <!-- INTERVIEW -->
+  <div class="w3-container" id="interview" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Visual Design Style Guide.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+  </div>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D38%253A615" allowfullscreen></iframe>
+  <!-- PERSONAS -->
+  <div class="w3-container" id="personas" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>High-fidelity Prototype.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>*Hover and scroll over the screen or open the Figma link to interact with the prototype*</p>
+    <h3 style="font-weight: bolder">Desktop</h3>
+    <p>Annotations regarding design for the desktop:</p>
+    <ul>
+      <li>Each section is using the flexbox layout in order to split up parts of the screen. Past the banner area, each section has the same padding for consistency.</li>
+      <li><b>Banner Area:</b> Uses @keyframes to have crossfade transition between multiple background pictures. Content in flexbox is set to justify content: flex-start</li>
+      <li><b>About Area:</b> Split up into two different divs-- about-left and about-right. The left div is set to flex-basis of 55% while the about-right div is set to 45% so that the text caption takes up more space.</li>
+      <li><b>Last Year's Shows Area:</b> There is a padding of 50px for the content in this section and the flexbox row content has justify-content set to space-around.</li>
+      <li><b>Upcoming Opportunities Area:</b> This section has the flex direction set to column so that each opportunity image and caption is aligned vertically.</li>
+      <li><b>Footer Area:</b> Split up into 5 different column divs and placed in a flexbox with the flex direction set to row.</li>
+    </ul>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2" allowfullscreen></iframe>
+    <h3 style="font-weight: bolder">Tablet</h3>
+    <p>Annotations regarding design for the tablet:</p>
+    <ul>
+      <li>This layout starts making use of media queries to change font size, flex direction, and padding so that the UI elements fit better.</li>
+      <li><b>Banner Area:</b> Similar to the desktop layout, use @keyframes to have a crossfade transition of multiple pictures. Using media queries, the logo and navigation menu font is made smaller to better fit the screen size.</li>
+      <li><b>About Area:</b> The size of the video media is made smaller in order to better fit in the flexbox. Max-width is set to 100% so that it does not overflow.</li>
+      <li><b>Last Year's Shows Area:</b> The flexbox direction is set to column, so that the videos and captions are now stacked on top of each other.</li>
+      <li><b>Upcoming Opportunities Area:</b> The flexbox direction remains the same here but the padding is made smaller for the content and the font size is changed as well.</li>
+      <li><b>Footer Area:</b> The footer padding is also decreased using responsive media queries.</li>
+    </ul>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D38%253A339%26scaling%3Dscale-down%26page-id%3D31%253A167" allowfullscreen></iframe>
+    <h3 style="font-weight: bolder">Phone</h3>
+    <p>Annotations regarding design for phone:</p>
+    <ul>
+      <li>Because the phone layout width is much smaller, significant use of media queries is necessary in order to fit everything on the screen in a clean manner.</li>
+      <li>Banner Area: The flex direction of the navigation menu and logo is switched to column so that these elements are now vertically aligned. The same is done for the title and the button.</li>
+      <li>About Area: The components here are made smaller to fit the space and they are stacked on top of each other.</li>
+      <li>Last Year's Shows Area: Similar to what was done for the tablet layout, these are vertically stacked and the font for the captions are made smaller.</li>
+      <li>Upcoming Opportunities Area: The images are resized to fit the screen without causing positioning complications with other elements. This is achieved by using max-width: 100% and height:auto. </li>
+      <li>Footer Area: Some footer sections are pushed down to fit the screen.</li>
+    </ul>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D31%253A166%26scaling%3Dscale-down%26page-id%3D31%253A108" allowfullscreen></iframe>
+  </div>
+
+  <!-- STORYBOARD -->
+  <div class="w3-container" id="storyboard" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Responsive Redesign of SFF Page.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>View my redesigned webpage <b><a href="https://browncsaccount.github.io/sacfilmfestival/#" target="_blank">here.</a></b></p>
+    <p> </p>
+  </div>
+  <div style="justify-content: center">
+    <img src="assets/Screen_Recording_2022-10-21_at_10_57_02_AM_AdobeExpress%20(2).gif" style="width:70%" onclick="onClick(this)" alt="Persona1">
+  </div>
+
+  <!-- CONCLUSION -->
+  <div class="w3-container" id="conclusion" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Conclusion.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>The Sacramento International Film Festival website was redesigned by adding a visual hierarchy, using consistent design choices fr the same components, moving around the layout, adding visual media like photos relevant to written content, and creating a universal navigation menu. Going through this workflow allowed me to better understand how to identify design problems, how to improve such pain points, and how to actually code a responsive design. Furthermore, I learned how to create and annotate lo fidelity and high fidelity prototypes. If I did this project again, I would play around </p>
+  </div>
+
+  <!-- End page content -->
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+</script>
+
+
+</body>
+
+
+</html>
