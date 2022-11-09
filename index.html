@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--I modified a template from W3 Schools for this hand-in. Source: https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm#packages-->
+<!--I'm utilizing a the w3 schools CSS page for this hand-in. Source: https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm#packages-->
 <head>
-  <title>Responsive Design</title>
+  <title>Iterative Design</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   <style>
-    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body,h1,h2,h3,h4,h5 {font-family: "Nunito", sans-serif}
     body {font-size:16px;}
     .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
     .w3-half img:hover{opacity:1}
@@ -20,14 +20,15 @@
 <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color: white; background-color: #807691" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Responsive <br>Redesign</b></h3>
+    <h3 class="w3-padding-64"><b>Iterative <br>Design</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Usability Problems</a>
-    <a href="#observations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-Fidelity Wireframing</a>
-    <a href="#interview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visual Design Style Guide</a>
-    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">High-Fidelity Prototyping</a>
-    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Responsive Redesign</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Raven</a>
+    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Initial Sketches</a>
+    <a href="#observations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Wireframe from Combined Ideas</a>
+    <a href="#interview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interactive Hi-Fi Mockup and Feedback</a>
+    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">User Testing Results & Analysis</a>
+    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Startup</a>
     <a href="#conclusion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conclusion</a>
   </div>
 </nav>
@@ -46,27 +47,31 @@
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-xxlarge"><b>Redesign of the Sacramento <br>Film Festival Website</b>
+    <h1 class="w3-xxlarge" style="margin-bottom:90px"><b>Designing an Interactive Interface for Raven</b>
     </h1>
-    <h1 class="w3-large" style="color: black"><b>I chose a simple website to redesign-- making improvements in the usability, learnability, and memorability. My objective was to practice the workflow of redesigning a simple website by creating low-fidelity and high-fidelity prototypes for different screen sizes. </b></h1>
+    <h1 class="w3-large" style="color: black"><b>We chose to design an interactive interface for Raven, an emerging startup to manage notifications across SMS, Email, Push, Slack, WA & more. We went through the iterative design process to make a mock up of a solution to the Raven's concept.
+    </b></h1>
     <hr style="width:50px;border:5px solid #807691" class="w3-round">
     <div class="w3-center">
-      <img src="https://www.armediastudio.com/sites/default/files/cinegraph-hdr.gif" style="width:30%" onclick="onClick(this)" alt="original website">
+      <img src="https://i.postimg.cc/90CR12HD/Screen-Shot-2022-11-08-at-9-58-30-PM.png" style="width:50%" onclick="onClick(this)" alt="raven background">
     </div>
-    <hr style="width:50px;border:5px solid #807691" class="w3-round">
-    <p>Each year, my hometown puts on a film festival to showcase the art of our local filmmaking community. In high school, my friends and I visited the website for the Sacramento International Film Festival. We found it extremely confusing to navigate, thus, deterring us from wanting to attend or appreciate such a meaningful event. Considerable effort and time are put into hosting local film festivals, so for this reason, I chose to redesign this website. A user-friendly website is essential to encouraging both attendance and recognition for all the independent artists involved in the event. The original website can be found <b><a href="https://www.sacramentofilmfestival.com/" target="_blank">here.</a></b>
+    <p>
+      Raven is a B2B product notification manager allowing businesses to monitor the performance of their notifications across channels (e.g. SMS, Email, WhatsApp, etc.) and streamline the notification sending process. Raven was part of Y Combinator’s S22 batch.
     </p>
-    <div class="w3-center">
-      <img src="https://i.postimg.cc/dVh51wM0/Screen-Shot-2022-10-20-at-3-09-29-PM.png" style="width:70%" onclick="onClick(this)" alt="original website">
-    </div>
+    <p>For a more in-depth description of the startup, feel free to browse Raven's Y-Combinator page <a href="https://www.ycombinator.com/launches/H2f-raven-a-single-api-for-product-notifications-across-sms-email-push-whatsapp-slack-more">here</a>.</p>
   </div>
 
   <!-- INTERFACE -->
   <div class="w3-container" id="interface" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: black"><b>Usability Problems.</b></h1>
+    <h1 class="w3-xxxlarge" style="color: black"><b>Initial Sketches.</b></h1>
     <hr style="width:50px;border:5px solid #807691" class="w3-round">
   </div>
   <div class="w3-row-padding">
+
+
+
+
+
   <div class="w3-half w3-margin-bottom">
     <ul class="w3-ul w3-light-grey w3-center">
       <li class=" w3-xlarge w3-padding-32" style="background-color: black;color: white">Usability</li>
@@ -103,16 +108,10 @@
   </div>
   </div>
 
-  <div class="w3-container" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: black"><b>Accessibility.</b></h1>
-    <hr style="width:50px;border:5px solid #807691" class="w3-round">
-    <p>The WebAIM WAIVE website found 13 contrast errors, 1 error, 25 alerts, 15 features, 34 structural elements, and 73 ARIA.</p>
-    <p>There was an alert for a skipped heading level. Headings provide structure for the page and facilitate keyboard navigation for users who need assistive technology. This makes the site more confusing for users that need to use assistive technology like a screen reader. Furuthermore, the text is very small in some areas like the Last Year’s Show section. This makes it difficult for people with low vision to read. There are also a fair amount of contrast errors– meaning that there is extremely low contrast between text and background colors. As a result, it could be frustrating for users, especially those with low vision, to read or distinguish text. I agree with the findings of WebAIM WAVE. The currrent Sacramento International Film Festival website is not the most accessible for all users.</p>
-  </div>
 
   <!-- OBSERVATIONS -->
   <div class="w3-container" id="observations" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: black"><b>Low Fidelity Wireframing.</b></h1>
+    <h1 class="w3-xxxlarge" style="color: black"><b>Wireframes.</b></h1>
     <hr style="width:50px;border:5px solid #807691" class="w3-round">
   </div>
   <h3 style="font-weight: bolder">Desktop</h3>
@@ -124,13 +123,14 @@
 
   <!-- INTERVIEW -->
   <div class="w3-container" id="interview" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: black"><b>Visual Design Style Guide.</b></h1>
+    <h1 class="w3-xxxlarge" style="color: black"><b>Interactive Hi-Fi Mockup and Feedback.</b></h1>
     <hr style="width:50px;border:5px solid #807691" class="w3-round">
   </div>
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D38%253A615" allowfullscreen></iframe>
+
   <!-- PERSONAS -->
   <div class="w3-container" id="personas" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: black"><b>High-fidelity Prototype.</b></h1>
+    <h1 class="w3-xxxlarge" style="color: black"><b>User Testing.</b></h1>
     <hr style="width:50px;border:5px solid #807691" class="w3-round">
     <p>*Hover and scroll over the screen or open the Figma link to interact with the prototype*</p>
     <h3 style="font-weight: bolder">Desktop</h3>
@@ -170,7 +170,7 @@
 
   <!-- STORYBOARD -->
   <div class="w3-container" id="storyboard" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: black"><b>Responsive Redesign of SFF Page.</b></h1>
+    <h1 class="w3-xxxlarge" style="color: black"><b>Contact Startup.</b></h1>
     <hr style="width:50px;border:5px solid #807691" class="w3-round">
     <p>View my redesigned webpage <b><a href="https://browncsaccount.github.io/sacfilmfestival/#" target="_blank">here.</a></b></p>
     <p> </p>
@@ -185,7 +185,7 @@
     <hr style="width:50px;border:5px solid #807691" class="w3-round">
     <p>The Sacramento International Film Festival website was redesigned by adding a visual hierarchy, using consistent design choices fr the same components, moving around the layout, adding visual media like photos relevant to written content, and creating a universal navigation menu. Going through this workflow allowed me to better understand how to identify design problems, how to improve such pain points, and how to actually code a responsive design. Furthermore, I learned how to create and annotate lo fidelity and high fidelity prototypes. If I did this project again, I would play around </p>
   </div>
-
+</div>
   <!-- End page content -->
 
 <script>
